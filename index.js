@@ -12,11 +12,11 @@ Parse.Cloud.useMasterKey();
 
 
 
-// Parse.serverURL = 'http://localhost:1337/parse';
-// var databaseUri = "mongodb://heroku_h5sc1hpx:jer7765m@ds023530.mlab.com:23530/heroku_h5sc1hpx";
+Parse.serverURL = 'http://localhost:1337/parse';
+var databaseUri = "mongodb+srv://heroku_h5sc1hpx:jer7765m@cluster-h5sc1hpx.enbxn.mongodb.net/heroku_h5sc1hpx?retryWrites=true&w=majority";
 
-Parse.serverURL = 'https://starpark.herokuapp.com/parse'
-var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
+//Parse.serverURL = 'https://starpark.herokuapp.com/parse'
+//var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 
 
 if (!databaseUri) {
