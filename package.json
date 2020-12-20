@@ -17,9 +17,7 @@
     "parse-server-mailgun-adapter-template":"*"
   },
  "scripts": {
-    "web" :"node index.js",
-"start" : "serve -s build",
-"heroku-postbuild" : "npm run build"
+    "start" :"node index.js"
 },
   "engines": {
     "node": ">=4.3"
