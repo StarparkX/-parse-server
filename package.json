@@ -16,9 +16,14 @@
     "parse-server-mailgun": "*",
     "parse-server-mailgun-adapter-template":"*"
   },
-  "scripts": {
-    "start": "node index.js"
-  },
+ "scripts": {
+"dev": "react-scripts start",
+"start": "serve -s build",
+"build": "react-scripts build",
+"test": "react-scripts test --env=jsdom",
+"eject": "react-scripts eject",
+"heroku-postbuild": "npm run build"
+},
   "engines": {
     "node": ">=4.3"
   }
