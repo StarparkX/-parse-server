@@ -15,7 +15,7 @@ Parse.Cloud.useMasterKey();
 //Parse.serverURL = 'http://localhost:1337/parse';
 //var databaseUri = "mongodb+srv://heroku_h5sc1hpx:%21jer7765m@cluster-h5sc1hpx.enbxn.mongodb.net/heroku_h5sc1hpx?retryWrites=true&w=majority";
 
-Parse.serverURL = 'https://starpark.herokuapp.com/parse/'
+Parse.serverURL = 'https://starpark.herokuapp.com/parse'
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 //var databaseUri = "mongodb+srv://heroku_h5sc1hpx:jer7765m@cluster-h5sc1hpx.enbxn.mongodb.net/test?retryWrites=true&w=majority";
 
@@ -30,11 +30,11 @@ var api = new ParseServer({
   appId: process.env.APP_ID || '1j5AUs95Nx9y4fbZJEXZNiOVEjcbJjalTFbxMGFQ',
   masterKey: process.env.MASTER_KEY || 'xRbUuRWOv21pvLmBddf9gTcmcnyX1R9AHkjHNRnb', //Add your master key here. Keep it secret!
   clientKey: 'xRbUuRWOv21pvLmBddf9gTcmcnyX1R9AHkjHNRnb',
-  serverURL: process.env.SERVER_URL || 'https://localhost:1337/parse/',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'https://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
-  publicServerURL: 'https://starpark.herokuapp.com/parse/',
+  publicServerURL: 'https://starpark.herokuapp.com/parse',
   // Your apps name. This will appear in the subject and body of the emails that are sent.
   appName: 'StarPark',
   emailAdapter: {
