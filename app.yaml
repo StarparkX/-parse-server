@@ -6,6 +6,7 @@ env_variables:
   DATABASE_URI: mongodb://localhost:27017/dev
   APP_ID: 1j5AUs95Nx9y4fbZJEXZNiOVEjcbJjalTFbxMGFQ
   MASTER_KEY: xRbUuRWOv21pvLmBddf9gTcmcnyX1R9AHkjHNRnb
+  SERVER_URL: https://starpark.herokuapp.com/parse
   # --OPTIONAL--
   # FILE_KEY: <your-file-key>
   # PARSE_MOUNT: /parse
