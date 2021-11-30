@@ -16,8 +16,8 @@ Parse.Cloud.useMasterKey();
 //var databaseUri = "mongodb+srv://heroku_h5sc1hpx:%21jer7765m@cluster-h5sc1hpx.enbxn.mongodb.net/heroku_h5sc1hpx?retryWrites=true&w=majority";
 
 Parse.serverURL = 'https://starpark.herokuapp.com/parse'
-var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
-//var databaseUri = "mongodb+srv://heroku_h5sc1hpx:jer7765m@cluster-h5sc1hpx.enbxn.mongodb.net/test?retryWrites=true&w=majority";
+//var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
+var databaseUri = "mongodb+srv://heroku_h5sc1hpx:jer7765m@cluster-h5sc1hpx.enbxn.mongodb.net/test?retryWrites=true&w=majority";
 
 
 if (!databaseUri) {
